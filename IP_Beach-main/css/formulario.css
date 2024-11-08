@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@1,500&family=Tinos:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Mukta", sans-serif;
+}
+
+:root {
+    --primary-color: #ff4406;
+}
+
+.logo {
+    height: 90px;
+    user-select: none;
+} 
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header, footer{
+    width: 100vw;
+    height: 100px;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 40%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    margin-top: 10px;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+p {
+    font-weight: bold;
+}
+input,
+select {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    background-color: #aaa;
+    border-radius: 10px;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    height: 48px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #FF4406;
+    color: #fff;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+@media (max-width: 1500px) {
+    header,
+    footer {
+        height: 50px;
+    }
+    .box {
+        width: 40%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    html {
+        font-size: 90%;
+    }
+    header,
+    footer {
+        height: 50px;
+    }
+    .box {
+        width: 60%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    html {
+        font-size: 85%;
+    }
+    header,
+    footer {
+        height: 50px;
+    }
+    .box {
+        width: 70%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 80%;
+    }
+    header,
+    footer {
+        height: 50px;
+    }
+    .box {
+        width: 80%;
+        padding: 20px;
+    }
+}
